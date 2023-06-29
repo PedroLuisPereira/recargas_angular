@@ -177,6 +177,7 @@
                               <thead class="thead-light">
                                   <tr>
                                       <th scope="col" class="sort" data-sort="name">Valor</th>
+                                      <th scope="col" class="sort" data-sort="budget">Celular</th>
                                       <th scope="col" class="sort" data-sort="budget">Operador</th>
                                       <th scope="col" class="sort" data-sort="budget">Vendedor</th>
                                   </tr>
@@ -192,6 +193,14 @@
                                               </div>
                                           </div>
                                       </th>
+
+                                      <td>
+                                        <span class="badge badge-dot mr-4">
+                                            <span class="status">
+                                                {{ item.celular }}
+                                            </span>
+                                        </span>
+                                      </td>
 
                                       <td>
                                           <span class="badge badge-dot mr-4">
@@ -253,17 +262,24 @@
                                   <div class="pl-lg-4">
                                       <div class="form-group">
                                           <label class="form-control-label">Valor</label>
-                                          <input type="text" [(ngModel)]="valor"
-                                              class="form-control form-control-alternative" placeholder="Nombre"
+                                          <input type="number" [(ngModel)]="valor"
+                                              class="form-control form-control-alternative" placeholder="Valor"
                                               required autofocus />
                                       </div>
+
+                                    <div class="form-group">
+                                        <label class="form-control-label">Celular</label>
+                                        <input type="number" [(ngModel)]="celular"
+                                            class="form-control form-control-alternative" placeholder="Celular"
+                                            required autofocus />
+                                    </div>
 
                                       <div class="form-group">
                                           <label class="form-control-label">Operador</label>
                                           <select [(ngModel)]="operador" required class="form-control">
                                               <option value="Tigo"> Tigo </option>
                                               <option value="Movistar"> Movistar </option>
-                                              <option value="Concel"> Comcel </option>
+                                              <option value="Comcel"> Comcel </option>
                                               <option value="UFF"> UFF </option>
                                           </select>
                                       </div>

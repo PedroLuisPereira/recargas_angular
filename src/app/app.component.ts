@@ -18,6 +18,7 @@ export class AppComponent implements OnInit {
   //recarga
   id: number = 0;
   valor: number = 0;
+  celular: string = "";
   operador: string = "";
   personaId: number = 0;
 
@@ -140,6 +141,7 @@ export class AppComponent implements OnInit {
 
     let json = {
       valor: this.valor,
+      celular: this.celular,
       operador: this.operador,
       persona_id: this.personaId,
     };
