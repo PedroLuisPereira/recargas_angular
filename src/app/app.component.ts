@@ -9,7 +9,7 @@ import { RecargaService } from './recarga.service';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent implements OnInit {
-  title = 'recarga';
+  title = 'recargas';
 
   //datos
   data: Array<any> = [];
