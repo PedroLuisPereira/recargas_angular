@@ -179,7 +179,7 @@
                                       <th scope="col" class="sort" data-sort="name">Valor</th>
                                       <th scope="col" class="sort" data-sort="budget">Celular</th>
                                       <th scope="col" class="sort" data-sort="budget">Operador</th>
-                                      <th scope="col" class="sort" data-sort="budget">Vendedor</th>
+                                      <!-- <th scope="col" class="sort" data-sort="budget">Vendedor</th> -->
                                   </tr>
                               </thead>
                               <tbody class="list">
@@ -210,13 +210,13 @@
                                           </span>
                                       </td>
 
-                                      <td>
+                                      <!-- <td>
                                           <span class="badge badge-dot mr-4">
                                               <span class="status">
                                                   {{ item.persona.nombre }}
                                               </span>
                                           </span>
-                                      </td>
+                                      </td> -->
 
                                   </tr>
                               </tbody>
@@ -277,10 +277,9 @@
                                       <div class="form-group">
                                           <label class="form-control-label">Operador</label>
                                           <select [(ngModel)]="operador" required class="form-control">
-                                              <option value="Tigo"> Tigo </option>
-                                              <option value="Movistar"> Movistar </option>
-                                              <option value="Comcel"> Comcel </option>
-                                              <option value="UFF"> UFF </option>
+                                              <option value="TIGO"> TIGO </option>
+                                              <option value="MOVISTAR"> MOVISTAR </option>
+                                              <option value="CLARO"> CLARO </option>
                                           </select>
                                       </div>
 

@@ -63,20 +63,20 @@ export class AppComponent implements OnInit {
           for (let index = 0; index < this.data.length; index++) {
 
             switch (this.data[index].operador) {
-              case "Tigo":
+              case "TIGO":
 
                 this.cantidadTigo = this.cantidadTigo + 1;
                 this.valorTigo = this.data[index].valor + this.valorTigo;
 
                 break;
-              case "Comcel":
+              case "CLARO":
 
                 this.cantidadComcel = this.cantidadComcel + 1;
                 this.valorComcel = this.data[index].valor + this.valorComcel;
 
                 break;
 
-              case "Movistar":
+              case "MOVISTAR":
 
                 this.cantidadMovistar = this.cantidadMovistar + 1;
                 this.valorMovistar = this.data[index].valor + this.valorMovistar;
@@ -90,7 +90,6 @@ export class AppComponent implements OnInit {
             }
 
           }
-
 
         }
 
@@ -143,7 +142,7 @@ export class AppComponent implements OnInit {
       valor: this.valor,
       celular: this.celular,
       operador: this.operador,
-      persona_id: this.personaId,
+      personaId: this.personaId,
     };
 
     this.recagaService.create(json).subscribe({
